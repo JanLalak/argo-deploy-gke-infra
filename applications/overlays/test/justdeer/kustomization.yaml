@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: justdeer
+
+resources:
+  # - ../../../../applications/base/justdeer/api
+  - ../../../../applications/base/justdeer/hello-world
+  - ../../../../applications/base/justdeer/ingress
+  # ../- ../../../applications/base/justdeer/webhook
+  # - ../../../../applications/base/justdeer/rbac
